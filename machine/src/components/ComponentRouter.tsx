@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Counter from './Counter';
+import Counter from './Hooks/Counter';
 
 const ComponentRouter: React.FC = () => {
     const { route } = useParams<{ route: string }>();
