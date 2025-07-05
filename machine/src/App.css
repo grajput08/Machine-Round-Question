@@ -1,0 +1,226 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Custom styles to complement Bootstrap */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  border-radius: 0.5rem;
+}
+
+.display-4 {
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Quiz-specific styles */
+.category-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+  font-size: 3rem;
+}
+
+.option-item {
+  transition: all 0.2s ease;
+}
+
+.option-item:hover {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.option-item.border-success {
+  background-color: #d1e7dd !important;
+}
+
+.option-item.border-danger {
+  background-color: #f8d7da !important;
+}
+
+.option-item.border-primary {
+  background-color: #cfe2ff !important;
+}
+
+.progress-info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.quiz-completed {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.explanation {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Import Topics Table Styles */
+.import-topics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.import-topics-container h2 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.import-topics-container h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.import-topics-container .table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.import-topics-container .table thead th {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.import-topics-container .table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.import-topics-container .table tbody tr:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.import-topics-container code {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+}
+
+.import-topics-container .alert {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* React Example Styles */
+.react-example-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.react-example-container h2 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.react-example-container .card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.react-example-container .card-header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.react-example-container pre {
+  background: #2d3748 !important;
+  border-radius: 0.5rem;
+  border: 1px solid #4a5568;
+}
+
+.react-example-container code {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.react-example-container .btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.react-example-container .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .progress-info {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .category-card {
+    margin-bottom: 1rem;
+  }
+
+  .import-topics-container .table-responsive {
+    font-size: 0.9rem;
+  }
+
+  .import-topics-container code {
+    font-size: 0.8rem;
+  }
+
+  .react-example-container .row {
+    flex-direction: column;
+  }
+
+  .react-example-container .col-md-6 {
+    margin-bottom: 1rem;
+  }
+
+  .react-example-container pre {
+    font-size: 0.8rem;
+  }
+}
