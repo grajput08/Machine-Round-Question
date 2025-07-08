@@ -1,6 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Counter from './Hooks/Counter';
+import CounterNumber from './Hooks/counter-number';
+import TextFields from './Hooks/text-fields';
+import FormNested from './Hooks/form-nested';
+import List from './Hooks/list-array/list';
 
 const ComponentRouter: React.FC = () => {
     const { route } = useParams<{ route: string }>();
@@ -8,6 +12,15 @@ const ComponentRouter: React.FC = () => {
     switch (route) {
         case 'counter':
             return <Counter />;
+        case 'counterNumber':
+            return <CounterNumber />
+        case 'textFields':
+            return <TextFields />
+        case 'formNested':
+            return <FormNested />
+        case 'todoApp':
+            return <List />
+
 
         default:
             return (
