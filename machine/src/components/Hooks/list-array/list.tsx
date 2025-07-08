@@ -30,12 +30,12 @@ const List = () => {
     }])
 
     return (
-        <div className="vh-100 bg-primary-subtle">
+        <div className="vh-100">
             <div className="d-flex justify-content-center align-items-center h-100">
                 <div className="card p-3 bg-primary-subtle">
                     <h1>Todo App</h1>
                     <AddTodo onAddTodo={handleNew} />
-                    <ListTask />
+                    <ListTask list={data} />
                 </div>
             </div>
         </div>

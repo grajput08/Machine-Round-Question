@@ -1,16 +1,24 @@
-import { useEffect } from "react";
+import { FC } from "react";
 
-const ListTask = () => {
-
-    return (
-        <div className="Container">
-            <h1>
-                List Task
-            </h1>
-
-        </div>
-    )
-
+interface Task {
+    name: string;
+    // add more fields if needed
 }
+
+interface ListTaskProps {
+    list: Task[];
+}
+
+const ListTask: FC<ListTaskProps> = ({ list }) => {
+    return (
+        <div className="row">
+            {list.map((val, index) => (
+                <div className="col-12" key={index}>
+                    <p>{val.name}</p>
+                </div>
+            ))}
+        </div>
+    );
+};
 
 export default ListTask;
