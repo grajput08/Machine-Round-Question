@@ -6,6 +6,7 @@ import TextFields from './Hooks/text-fields';
 import FormNested from './Hooks/form-nested';
 import List from './Hooks/list-array/list';
 import ServerChat from './Hooks/serverChat';
+import ContactUs from './UI/contact-us';
 
 const ComponentRouter: React.FC = () => {
     const { route } = useParams<{ route: string }>();
@@ -23,6 +24,8 @@ const ComponentRouter: React.FC = () => {
             return <List />
         case 'serverChat':
             return <ServerChat />
+        case 'contactUs':
+            return <ContactUs />
 
 
         default:
