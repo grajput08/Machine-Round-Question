@@ -42,5 +42,12 @@ export const importTopics: ImportTopic[] = [
     questionName: "State Management with useState",
     description: "Hook for managing state in functional components of Todo APP",
     url: "/todoApp",
+  },
+  {
+    category: "Core React",
+    topic: "useEffect",
+    questionName: "State Management with useEffect",
+    description: "Hook for managing state in functional components of To APP",
+    url: "/serverChat"
   }
 ];

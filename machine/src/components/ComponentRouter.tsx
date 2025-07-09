@@ -5,6 +5,7 @@ import CounterNumber from './Hooks/counter-number';
 import TextFields from './Hooks/text-fields';
 import FormNested from './Hooks/form-nested';
 import List from './Hooks/list-array/list';
+import ServerChat from './Hooks/serverChat';
 
 const ComponentRouter: React.FC = () => {
     const { route } = useParams<{ route: string }>();
@@ -20,6 +21,8 @@ const ComponentRouter: React.FC = () => {
             return <FormNested />
         case 'todoApp':
             return <List />
+        case 'serverChat':
+            return <ServerChat />
 
 
         default:
